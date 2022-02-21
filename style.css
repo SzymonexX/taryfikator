@@ -5,9 +5,8 @@ u
 
 div.manewry, div.inne, div.predkosc, div.techniczny, div.transport, div.ucieczka, div.kradziez, div.drogowe, div.postoj, div.lotniczy, div.cayo
 {
-    border: rgb(66, 82, 117);
-  border-style: solid;
-  padding: 1px;
+    border: 3px solid #425275;
+  margin: 3px;
 }
 
 div
@@ -29,4 +28,5 @@ body
     color: rgb(133, 192, 166);
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
+    text-align: center;
 }
