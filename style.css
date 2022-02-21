@@ -1,50 +1,32 @@
 u
 {
-    color: red;
+    color: rgb(60, 148, 175);
 }
 
-.drogowe
+div.manewry, div.inne, div.predkosc, div.techniczny, div.transport, div.ucieczka, div.kradziez, div.drogowe, div.postoj, div.lotniczy, div.cayo
 {
-    margin-top: -400px;
+    border: rgb(66, 82, 117);
+  border-style: solid;
+  padding: 1px;
 }
 
-.postoj
+div
 {
-    margin-top: -220px;
+    padding: 3px;
 }
 
-.inne
-{
-    margin-top: -380px;
-    margin-left: 25%;
-}
 
-.lotniczy
-{
-    margin-top: -120px;
-}
-
-.div
-{
-    overflow-x: auto;
-}
-
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .div {
-      width: 80%;
-      padding: 0;
-    }
-  }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    .div {
-      width: 100%;
-    }
-  }
   
 .container
 {
     width: 100%;
     height: 100%;
+}
+
+body
+{
+    background-color: rgb(3, 3, 3);
+    color: rgb(133, 192, 166);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
 }
