@@ -1,13 +1,15 @@
 u
 {
     color: rgb(60, 148, 175);
+    text-decoration: none;
 }
 
 div.manewry, div.inne, div.predkosc, div.techniczny, div.transport, div.ucieczka, div.kradziez, div.drogowe, div.postoj, div.lotniczy, div.cayo
 {
     border: 3px solid #425275;
-  margin: 3px;
+    margin: 3px;
 }
+
 
 div
 {
