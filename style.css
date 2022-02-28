@@ -1,34 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgb(3, 3, 3);
+    color: #85c0a6;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.navbar
+{
+    background-color: #444947;
+    width: 100%;
+    height: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    justify-content: center;
+}
+.inne, .manewry, .cayo, .transport, .lotniczy, .predkosc, .techniczny, .drogowe, .ucieczka, .postoj, .kradziez
+{
+    border: 3px solid #425275;
+    width: 24.3%;
+    margin: 3px;
+    float: left;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
 u
 {
     color: rgb(60, 148, 175);
     text-decoration: none;
 }
-
-div.manewry, div.inne, div.predkosc, div.techniczny, div.transport, div.ucieczka, div.kradziez, div.drogowe, div.postoj, div.lotniczy, div.cayo
+p
 {
-    border: 3px solid #425275;
-    margin: 3px;
+    margin: 1px;
 }
-
-
-div
+a
 {
-    padding: 3px;
+    text-decoration: none;
+    color: #c72b2b;
 }
-
-
-  
-.container
+h1
 {
-    width: 100%;
-    height: 100%;
+    margin-bottom: 2px;
 }
-
-body
+.navbar-items-nielegale
 {
-    background-color: rgb(3, 3, 3);
-    color: rgb(133, 192, 166);
-    font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
-    text-align: center;
+    float: right;
+    right: 0;
+    margin-top: -10px;
+    transform: translate(-50%, -50%);
+}
+.navbar-p
+{
+    width: 100px;
+}
+@media screen and (max-width:1200px){
+    .inne, .manewry, .cayo, .transport, .lotniczy, .predkosc, .techniczny, .drogowe, .ucieczka, .postoj, .kradziez{
+        width: 40%;
+    }
+}
+@media screen and (max-width:600px){
+    .inne, .manewry, .cayo, .transport, .lotniczy, .predkosc, .techniczny, .drogowe, .ucieczka, .postoj, .kradziez{
+        width: 40%;
+    }
 }
