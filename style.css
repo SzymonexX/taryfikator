@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root
+{
+    --color: #85c0a6;
+    --bg-navbar: #444947;
+}
+body
+{
+    background-color: #000000;
+    color: #85c0a6;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.navbar
+{
+    background-color: #444947;
+    width: 100%;
+    height: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    justify-content: center;
+}
+.inne, .manewry, .cayo, .transport, .lotniczy, .predkosc, .techniczny, .drogowe, .ucieczka, .postoj, .kradziez
+{
+    border: 3px solid #425275;
+    width: 24.3%;
+    margin: 3px;
+    float: left;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+u
+{
+    color: #3c94af;
+    text-decoration: none;
+}
+p
+{
+    margin: 1px;
+}
+a
+{
+    text-decoration: none;
+    color: #c72b2b;
+}
+h1
+{
+    margin-bottom: 2px;
+}
+.navbar-items-nielegale
+{
+    float: right;
+    right: 0;
+    margin-top: -10px;
+    transform: translate(-50%, -50%);
+}
+.navbar-p
+{
+    width: 100px;
+}
+@media screen and (max-width:1200px){
+    .inne, .manewry, .cayo, .transport, .lotniczy, .predkosc, .techniczny, .drogowe, .ucieczka, .postoj, .kradziez{
+        width: 40%;
+    }
+}
+@media screen and (max-width:600px){
+    .inne, .manewry, .cayo, .transport, .lotniczy, .predkosc, .techniczny, .drogowe, .ucieczka, .postoj, .kradziez{
+        width: 40%;
+    }
+}
+#submit
+{
+    color: var(--color);
+    background-color: var(--bg-navbar);
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+input[type="checkbox" i]  {
+
+    display: none !important;
+    visibility: hidden;
+    position: absolute left -9999px;
+
+}
+.active
+{
+    display: inline-block;
+}
