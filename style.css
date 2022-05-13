@@ -4,13 +4,14 @@
 }
 :root
 {
-    --color: #85c0a6;
-    --bg-navbar: #444947;
+    --color-font: #649194;
+    --bg-navbar: #44494775;
+    --border-color: #ffffff67;
 }
 body
 {
-    background-color: #000000;
-    color: #85c0a6;
+    background-color: #0c1324;
+    color: var(--color-font);
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
     margin: 0;
@@ -21,13 +22,12 @@ body
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 div.navbar
 {
-    background-color: #444947;
+    background-color: var(--bg-navbar);
     width: 100%;
     height: 20px;
     margin-top: 3px;
@@ -37,22 +37,22 @@ div.navbar
 }
 .inne, .manewry, .cayo, .transport, .lotniczy, .predkosc, .techniczny, .drogowe, .ucieczka, .postoj, .kradziez
 {
-    border: 3px solid #425275;
+    border: 2px dashed var(--border-color);
+    border-radius: 5px; 
     width: 24.3%;
-    margin: 3px;
+    margin: 4px;
     float: left;
-    position: relative;
-    text-align: center;
-    box-sizing: border-box;
+    text-align: center;   
 }
 u
 {
-    color: #3c94af;
+    color: white;
+    text-shadow: 2px  2px 1px #055dff;
     text-decoration: none;
 }
 p
 {
-    margin: 1px;
+    padding: 0 5px 5px 5px;
 }
 a
 {
