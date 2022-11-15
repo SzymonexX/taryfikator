@@ -12,7 +12,9 @@
         crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6W3M3CSVQ"></script>
     <script>
@@ -27,14 +29,11 @@
 <body>
     <div class="container">
         <div class="navbar">
-            <p class="aktualizacja">Aktualizacja: do tego najnowszego taryfikatora</p>
-            <div class="navbar-items">
-                Taryfikator
-            </div>
-            <div class="navbar-items-nielegale"><a href="https://szymonexx.github.io/nielegale/"
-                    target="_blank">Nielegale</a></div>
+            <p class="aktualizacja navbar-items">Aktualizacja: 15.11.2022</p>
+            <p class="taryfikator navbar-items">Taryfikator By Szymonex_#3540</p>
+            <a  class="nielegale navbar-items" href="https://szymonexx.github.io/nielegale/" target="_blank">Nielegale</a>
         </div>
-        <div class="inne">
+        <div class="inne content">
             <h1>Inne:</h1>
             <p>
                 - Bezpodstawne wezwanie: <u class="u">od $3 500 do $5 000</u>
@@ -70,7 +69,7 @@
                 <u class="u">od $10 000 do $15 000</u>
             </p>
         </div>
-        <div class="manewry">
+        <div class="manewry content">
             <h1>Manewry:</h1>
             <p>
                 - Wykonanie niedozwolonego manewru: od <u class="u">$1 000 do $4 000</u>
@@ -102,8 +101,8 @@
                 - Cofanie na drogach szybkiego ruchu: <u class="u">od $1 500 do $2 500</u>
             </p>
         </div>
-        <div class="cayo">
-            <h1>Cayo Precio:</h1>
+        <div class="cayo content">
+            <h1>Cayo Perico:</h1>
             <p>
                 - Wyprzedzanie na moście przez pojazdy nieuprzywilejowane: <u class="u">od $8 000 do $12 000</u>
                 <br>
@@ -124,7 +123,7 @@
                 - Spowodowanie kolizji: <u class="u">$8 500</u>
             </p>
         </div>
-        <div class="transport">
+        <div class="transport content">
             <h1>Transport:</h1>
             <p>
                 - Przeładowanie pojazdu (do 2t): <u class="u">$3 000</u>
@@ -138,7 +137,7 @@
                 - Rozładowanie towaru podczas kontroli: <u class="u">od $2 500 do $10 000 + od 5 do 15 min więzienia</u>
             </p>
         </div>
-        <div class="predkosc">
+        <div class="predkosc content">
             <h1>Prędkość:</h1>
             <p>
                 - Przekroczenie prędkości o 21-40km/h: <u class="u">$2 000</u>
@@ -150,7 +149,7 @@
                 - Jazda z prędkością utrudniającą ruch innym kierującym: <u class="u">$4 000</u>
             </p>
         </div>
-        <div class="lotniczy">
+        <div class="lotniczy content">
             <h1>Ruch lotniczy:</h1>
             <p>
                 - Lądowanie na dachu komisariatu policji: <u class="u">$100 000</u>
@@ -160,7 +159,7 @@
                 - Spowodowanie katastrofy lotniczej: <u class="u">$30 000 </u>
             </p>
         </div>
-        <div class="techniczny">
+        <div class="techniczny content">
             <h1>Stan techniczny:</h1>
             <p>
                 - Zły stan techniczny pojazdu osobowego/dwuśladu: <u class="u">od $1 000 do $1 500 + nakaz wezwania
@@ -173,7 +172,7 @@
                     Drogowej</u>
             </p>
         </div>
-        <div class="drogowe">
+        <div class="drogowe content">
             <h1>Zdarzenia drogowe:</h1>
             <p>
                 - Spowodowanie kolizji lub wypadku drogowego: <u class="u">$1 500 + naprawa pojazdu uszkodzonego na
@@ -184,7 +183,7 @@
                 - Specjalne niszczenie pojazdu innego gracza (kopanie, uderzanie): <u class="u">od $1 000 do $2 000 </u>
             </p>
         </div>
-        <div class="ucieczka">
+        <div class="ucieczka content">
             <h1>Ucieczka:</h1>
             <p>
                 - Ucieczka: <u class="u">od $15 000 do $30 000 + od 15 do 30 min więzienia</u>
@@ -196,7 +195,7 @@
                     funkcjonariusz wybierze</u>
             </p>
         </div>
-        <div class="postoj">
+        <div class="postoj content">
             <h1>Postój:</h1>
             <p>
                 - Zatrzymanie się w miejscu niedozwolonym: <u class="u">od $300 do $700</u>
@@ -204,7 +203,7 @@
                 - Zatrzymanie się na parkingu policyjnym dłużej niż 5 min: <u class="u">od $500 do $1 500</u>
             </p>
         </div>
-        <div class="kradziez">
+        <div class="kradziez content">
             <h1>Kradzież:</h1>
             <p>
                 - Kradzież pojazdów prywatnych: <u class="u">od $500 do $2 000 + 5 min więzienia</u>
@@ -214,6 +213,13 @@
             </p>
         </div>
     </div>
+    <div class="display"></div>
+    <script>
+        
+        const image = localStorage.setItem("image-url", "https://cdn.pixabay.com/photo/2022/07/06/13/32/soap-7305178_960_720.jpg");
+
+        document.body.style.backgroundImage = "url('image'))";
+    </script>
 </body>
 
 </html>
