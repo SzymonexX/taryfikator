@@ -1,118 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-:root
-{
-    --color-font: #649194;
-    --bg-navbar: #44494775;
-    --border-color: #ffffff67;
+:root {
+	--font: white;
+	--bg-navbar: #44494775;
+	--border: #425275;
+	--seconary-color: #61ddc8;
+    --fine: #2d72f1;
+    --nielegale: #c72b2b;
 }
-body
-{
-    background-color: #0c1324;
-    color: var(--color-font);
-    font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
+body {
+	background-color: #0c1324;
+	color: var(--font);
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	background-image: url(https://media.discordapp.net/attachments/602615838754996255/1040276731178782740/Zrzut_ekranu_2022-11-10_154355.png?width=1193&height=671);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-blend-mode:multiply; */
 }
-.container
-{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
-div.navbar
-{
-    background-color: var(--bg-navbar);
-    width: 100%;
-    height: 20px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+.navbar {
+	width: 100%;
+	height: 20px;
+	/* text-align: center; */
+	background-color: var(--bg-navbar);
 }
-div.navbar-items{
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    z-index: 1;
+.navbar-items {
+	position: absolute;
 }
-.aktualizacja{
-    justify-content:unset;
-    text-align:left;
-    float: left;
-    color: #61ddc8;
-    position:absolute
+.aktualizacja {
+	color: var(--fine);
+	left: 0;
 }
-.inne, .manewry, .cayo, .transport, .lotniczy, .predkosc, .techniczny, .drogowe, .ucieczka, .postoj, .kradziez
-{
-    border: 2px dashed var(--border-color);
-    border-radius: 5px; 
-    width: 24.3%;
-    margin: 4px;
-    float: left;
-    text-align: center;
-    
+.taryfikator {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+    width: 240px;
 }
-u
-{
-    color: white;
-    text-shadow: 2px  2px 1px #055dff;
-    text-decoration: none;
+.nielegale {
+	right: 0;
 }
-p
-{
-    padding: 0 5px 5px 5px;
+.content {
+	border: 2px dashed var(--border);
+	border-radius: 5px;
+	width: 24.3%;
+	margin: 4px;
+	float: left;
+	text-align: center;
 }
-a
-{
-    text-decoration: none;
-    color: #c72b2b;
+u {
+	color: var(--fine);
+	text-decoration: none;
 }
-h1
-{
-    margin-bottom: 2px;
+p {
+	padding: 0 5px 5px;
+	display: inline-block;
 }
-.navbar-items-nielegale
-{
-    float: right;
-    right: 0;
-    margin-top: -10px;
-    transform: translate(-50%, -50%);
+a {
+	text-decoration: none;
+	color: var(--nielegale);
+	display: inline-block;
 }
-.navbar-p
-{
-    width: 100px;
+h1 {
+	margin-bottom: 2px;
 }
-@media screen and (max-width:1200px){
-    .inne, .manewry, .cayo, .transport, .lotniczy, .predkosc, .techniczny, .drogowe, .ucieczka, .postoj, .kradziez{
-        width: 40%;
-    }
+@media (max-width: 1200px) {
+	.content {
+		width: 20%;
+	}
 }
-@media screen and (max-width:600px){
-    .inne, .manewry, .cayo, .transport, .lotniczy, .predkosc, .techniczny, .drogowe, .ucieczka, .postoj, .kradziez{
-        width: 40%;
-    }
+@media (max-width: 600px) {
+	.content {
+		width: 40%;
+	}
 }
-#submit
-{
-    color: var(--color);
-    background-color: var(--bg-navbar);
-    border-radius: 5px;
-    display: inline-block;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 12px;
+@media (max-width: 300px) {
+	.content {
+		width: 80%;
+	}
 }
-input[type="checkbox" i]  {
-
-    display: none !important;
-    visibility: hidden;
-    position: absolute left -9999px;
-
-}
-.active
-{
-    display: inline-block;
+.display {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	background-color: rgba(0, 0, 0, 0.568);
 }
