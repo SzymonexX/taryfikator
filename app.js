@@ -6,11 +6,11 @@ const ul_list = document.getElementById('ul-list')
 const img_button = document.getElementById('img-button')
 const ul_img_button = document.getElementById('ul-img-button')
 
+document.body.style.backgroundImage = `url(background.png)`
+
 if (typeof localStorage.getItem('image_url') != 'undefined') {
 	if (localStorage.getItem('image_url')) {
 		document.body.style.backgroundImage = `url(${localStorage.getItem('image_url')})`
-	} else {
-		document.body.style.backgroundImage = `url(background.png)`
 	}
 }
 
