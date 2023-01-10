@@ -1,0 +1,257 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--font: #fff;
+	--bg-navbar: #1d1c1c86;
+	--border: rgba(66, 82, 117, 0.301);
+	--seconary-color: #61ddc8;
+	--fine: #2d72f1;
+	--nielegale: #c72b2b;
+}
+body {
+	background-color: #0c1324;
+	color: var(--font);
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.navbar {
+	width: 100%;
+	background-color: var(--bg-navbar);
+	text-align: center;
+}
+.img-button {
+	position: absolute;
+	left: 0;
+	margin-left: 2px;
+	font-size: 30px;
+	color: var(--fine);
+	background: none;
+	border: none;
+	transition: color 0.2s;
+	cursor: pointer;
+}
+.img-button:hover {
+	color: #265bbe;
+}
+.div-taryfikator {
+	display: inline-block;
+}
+.navbar-items {
+	padding: 5px 5px 0 5px;
+}
+.lista-zmian {
+	margin-top: 8px;
+	text-align: center;
+	color: white;
+}
+.form {
+	position: absolute;
+	right: 0;
+	display: inline-block;
+}
+.content {
+	margin: 4px;
+	width: 24.3%;
+	text-align: center;
+	background: #1d1f20b9;
+	border-radius: 5px;
+}
+.u {
+	font-weight: 800;
+	color: var(--fine);
+	text-decoration: none;
+}
+.content > p {
+	padding: 0px 5px 5px;
+}
+h2 {
+	margin-bottom: 2px;
+	padding: 0px 10px;
+	font-size: 2em;
+}
+
+/* NEW */
+
+.background-tool {
+	position: fixed;
+	margin: 50vh 20px 0;
+	transform: translateY(-50%);
+	visibility: hidden;
+	z-index: 1;
+}
+.background-items {
+	text-align: center;
+	background-color: #15346d;
+	border-radius: 20px;
+}
+.description {
+	font-size: 30px;
+	margin-top: 15px;
+	padding: 0 20px;
+}
+.close-tool-btn {
+	margin-top: 5px;
+	padding: 5px 14px;
+	font-size: 20px;
+	color: white;
+	background-color: var(--nielegale);
+	border: none;
+	border-radius: 10px;
+	transition: color 0.3s;
+	cursor: pointer;
+}
+.close-tool-btn:hover {
+	color: #dbdbdb;
+}
+.text-input {
+	margin-top: 20px;
+	margin-left: 10px;
+	padding: 2px 0;
+	width: 30vw;
+	height: 35px;
+	color: #fff;
+	background-color: #00000070;
+	border: 0;
+	border-radius: 5px;
+}
+.text-input::placeholder {
+	color: #fff;
+	text-align: center;
+}
+.text-input:focus {
+	outline: none;
+}
+.submit-btn,
+.reset-btn {
+	margin: 10px;
+	padding: 10px 16px;
+	background-color: #00000070;
+	border-radius: 8px;
+	border-style: none;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	transition: color 0.1s;
+}
+.submit-btn:hover,
+.reset-btn:hover {
+	background-color: #0e3b8d;
+}
+.error-span {
+	display: block;
+	margin-top: 20px;
+	font-size: 20px;
+	color: red;
+	visibility: hidden;
+}
+
+/* BACKGROUND TOOL END*/
+
+.nav-hamburger-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+	padding: 0 10px;
+	font-size: 20px;
+	color: var(--fine);
+	background: none;
+	border: none;
+	cursor: pointer;
+	z-index: 2;
+	transition: color 0.3s;
+}
+.nav-hamburger-button:hover {
+	color: #255bbe;
+}
+.ul-hamburger-menu {
+	position: absolute;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	display: none;
+	background-color: #181818;
+	list-style-type: none;
+	z-index: 1;
+}
+.ul-active {
+	display: block;
+}
+.ul-img-button {
+	font-size: 3rem;
+	color: var(--fine);
+	background: none;
+	border: none;
+	transition: color 0.2s;
+	cursor: pointer;
+}
+.ul-img-button:hover {
+	color: #265bbe;
+}
+.ul-taryfikator {
+	color: white;
+}
+.ul-aktualizacja {
+	color: white;
+}
+.ul-lista-zmian {
+	margin: 10px;
+	color: white;
+}
+.ul-hamburger-menu > li {
+	padding: 10px 0 0 10px;
+}
+@media (max-width: 1200px) {
+	.content {
+		width: 30%;
+	}
+	body {
+		font-size: 1.1em;
+	}
+}
+@media (max-width: 690px) {
+	.content {
+		width: 40%;
+		word-break: break-all;
+	}
+	body {
+		font-size: 1.2em;
+	}
+}
+@media (max-width: 414px) {
+	.content {
+		width: 80%;
+	}
+	body {
+		font-size: 1.3em;
+	}
+	.description {
+		font-size: 14px;
+	}
+}
+@media (max-width: 767.98px) {
+	.navbar-items,
+	.form {
+		visibility: hidden;
+	}
+	.nav-hamburger-button {
+		display: block;
+		font-size: 30px;
+	}
+	.navbar {
+		height: 32px;
+	}
+}
