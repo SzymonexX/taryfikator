@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="poli.png" />
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/style2.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="./assets/img/poli.webp" />
     <script src="https://kit.fontawesome.com/4cfd8a082f.js" crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -29,32 +30,38 @@
     <div class="container">
         <nav class="navbar">
             <button id="img-button" class="img-button navbar-items"><i class="fa-solid fa-image"></i></button>
+            <div class="div-taryfikator">
+                <p class="taryfikator navbar-items">Taryfikator By <u class="u">Szymonex_#3540</u></p>
+            </div>
             <div class="form navbar-items">
                 <form action="https://www.paypal.com/donate" method="post" target="_blank">
                     <input type="hidden" name="hosted_button_id" value="TLTF255SARTVW" />
                     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0"
                         name="submit" title="PayPal - The safer, easier way to pay online!"
                         alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_PL/i/scr/pixel.gif" width="1" height="1" />
                 </form>
 
-                </a>
             </div>
-            <p class="taryfikator navbar-items">Taryfikator By <u class="u">Szymonex_#3540</u></p>
-            <p class="lista-zmian navbar-items"><u class="u">26.12.2022</u> &nbsp Lista Zmian: Nowe
-                UI, Nowe czcionki, Opcja umożliwiająca zmianę tła, Hamburger menu, Pogrubienie grzywny.</p>
+            <p class="lista-zmian navbar-items"><u class="u">10.01.2023</u> &nbsp; Lista Zmian: Usunięto niepotrzebny
+                kod, Dodano łamanie wyrazów przy mniejszej rodzielczości ekranu, Zmiana podstawowego tła na mniejszą
+                jakość przy urządzeniach mobilnych, Responsywny panel do zmiany tła, Zmiana tła z .png na .webp, Nowe
+                style na funkcji zmiany tła, Przycisk Donate.</p>
             <div class="nav-bar-hamburger">
-                <button class="nav-hamburger-button" id="btn-hamburger"><i class="fa-solid fa-bars"></i></button>
+                <button class="nav-hamburger-button" id="btn-hamburger" aria-label="drop-down menu"><i
+                        class="fa-solid fa-bars"></i></button>
             </div>
             <div class="hamburger-menu">
                 <ul class="ul-hamburger-menu" id="ul-list">
                     <li><button class="ul-img-button" id="ul-img-button"><i class="fa-solid fa-image"></i></button></li>
                     <li>
-                        <p class="ul-taryfikator">Taryfikator By Szymonex_#3540</p>
+                        <p class="ul-taryfikator">Taryfikator By <u class="u">Szymonex_#3540</u></p>
                     </li>
                     <li>
-                        <p class="ul-lista-zmian">17.11.2022 &nbsp Lista Zmian: Nowe UI, Nowe czcionki, Opcja
-                            umożliwiająca zmianę tła, Hamburger menu, Pogrubienie grzywny.
+                        <p class="ul-lista-zmian"><u class="u">10.01.2023</u> &nbsp; Lista Zmian: Usunięto niepotrzebny
+                            kod, Dodano łamanie wyrazów przy mniejszej rodzielczości ekranu, Zmiana podstawowego tła na
+                            mniejszą
+                            jakość przy urządzeniach mobilnych, Responsywny panel do zmiany tła, Zmiana tła z .png na
+                            .webp, Nowe style na funkcji zmiany tła, Przycisk Donate.
                         </p>
                     </li>
                     <li>
@@ -63,8 +70,6 @@
                             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
                                 border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
                                 alt="Donate with PayPal button" />
-                            <img alt="" border="0" src="https://www.paypal.com/en_PL/i/scr/pixel.gif" width="1"
-                                height="1" />
                         </form>
 
                     </li>
@@ -250,18 +255,20 @@
                     więzienia</u>
             </p>
         </div>
-        <div class="background-set bgc-element" id="bgc-id">
-            <div class="background-set-item bgc-element">
-                <button class="x" id="x" onclick="hide_frame()"><i class="fa-solid fa-x"></i></button>
-                <p>Tutaj możesz zmienić tło (Najlepiej Full HD)</p>
-                <input type="url" name="background-url" id="input-url" class="input-link" placeholder="URL obrazu">
-                <button id="submit" onclick="change_background()">Aktualizuj</button>
-                <button onclick="reset_background()" class="reset-button">Reset</button>
-                <span class="span-error" id="error">Wklej link</span>
+        <div class="background-tool bgc-element" id="background-tool">
+            <div class="background-items bgc-element">
+                <button class="close-tool-btn" id="close-tool-btn" onclick="hide_frame()"><iclass="fa-solid fa-x"></i></button>
+                <div class="description">
+                    <p>Tutaj możesz zmienić tło (Najlepiej Full HD)</p>
+                </div>
+                <input type="url" name="background-url" class="text-input" id="text-input" placeholder="URL obrazu">
+                <button class="submit-btn" id="submit-btn" onclick="change_background()">Aktualizuj</button>
+                <button class="reset-btn" onclick="reset_background()">Reset</button>
+                <span class="error-span" id="error">Wklej link</span>
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
